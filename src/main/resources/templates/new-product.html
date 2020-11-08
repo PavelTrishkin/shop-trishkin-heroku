@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<div th:replace="~{navigation :: navigation(Users)}"/>
+<div th:replace="~{navigation :: navigation(Market)}"></div>
 <h1>Новый товар</h1>
 <form th:action="@{/products/new}" th:object="${product}" method="POST">
     <input hidden th:field="*{id}"/>

@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<div th:replace="~{navigation :: navigation(Users)}"></div>
 <h1>Изменить права пользователя</h1>
 <h2> Список Ролей: MANAGER, ADMIN</h2>
 <form th:action="@{/users/edit}" th:object="${user}" method="POST">

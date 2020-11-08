@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<div th:replace="~{navigation :: navigation(Market)}"></div>
 <h1>Изменить товар</h1>
 <form th:action="@{/products/edit}" th:object="${product}" method="POST">
     <input hidden th:field="*{id}"/>

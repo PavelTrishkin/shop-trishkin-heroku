@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<div th:replace="~{navigation :: navigation(Users)}"/>
+<div th:replace="~{navigation :: navigation(Users)}"></div>
 <h1>Добавить нового пользователя</h1>
 <form th:action="@{/users/new}" th:object="${user}" method="POST">
     <div class="form-row align-items-center">
