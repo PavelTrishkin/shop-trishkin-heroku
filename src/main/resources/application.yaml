@@ -1,0 +1,15 @@
+server:
+  hostname: localhost
+  port: ${PORT:8080}
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:${DATABASE_PATH}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+  flyway:
+    baseline-on-migrate: true
