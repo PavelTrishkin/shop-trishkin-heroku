@@ -14,7 +14,7 @@
     <int:channel id="sellsChannel"/>
 
     <int-http:outbound-channel-adapter id="sellsAdapter"
-                                       url="http://localhost:8090/sells"
+                                       url="https://shop-integration.herokuapp.com/sells"
                                        http-method="POST"
                                        charset="UTF-8"
                                        channel="sellsChannel">
